@@ -371,9 +371,9 @@
   _.shuffle = function(array) {
     var tempArray = array.slice();
     var results = [];
-    while(tempArray.length > 0) {
+    while (tempArray.length > 0) {
       var randomIndex = Math.floor(Math.random() * tempArray.length);
-      var element = tempArray.splice(randomIndex,1)[0];
+      var element = tempArray.splice(randomIndex, 1)[0];
       results.push(element);
     }
     return results;
