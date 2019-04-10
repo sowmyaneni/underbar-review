@@ -193,8 +193,8 @@
       it('should override properties found on the destination', function() {
         // Replace this line with an `expect` statement that tests
         // the behavior described by the `it` string
-        var destination = {"x": 1, "y": 2};
-        var source = {"x": 3, "z": 4};
+        var destination = {'x': 1, 'y': 2};
+        var source = {'x': 3, 'z': 4};
         var extended = _.extend(destination, source);
 
         expect(extended.x).to.equal(3);
@@ -277,7 +277,7 @@
         // the behavior described by the `it` string
         var destination = {'x': 1, 'y': 2};
         var source = {'x': 5, 'z': 6};
-        
+
         _.defaults(destination, source);
 
         expect(destination.z).to.equal(6);
